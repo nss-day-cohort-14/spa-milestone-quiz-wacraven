@@ -1,0 +1,18 @@
+.shipCard {
+	border: 2px solid black;
+	height: 600px;
+}
+
+.shipCard > * {
+	text-align: justify;
+}
+
+.shipCard > img {
+	width: 200px;
+	display: block;
+	margin: auto;
+}
+
+.shipHeader {
+	text-align: center;
+}
