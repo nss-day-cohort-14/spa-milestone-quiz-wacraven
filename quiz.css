@@ -1,5 +1,5 @@
 .shipCard {
-	border: 2px solid black;
+	border: 3px solid black;
 	height: 600px;
 }
 
@@ -17,10 +17,27 @@
 	text-align: center;
 }
 
-/*.shipCard:hover {
-	background-color: lightgray;
-}*/
-
 .selected {
-	background-color: darkgray;
+	background-color: lightgray;
+	border: 5px solid;
+}
+
+.Wheat {
+	border-color: wheat;
+}
+
+.Brown {
+	border-color: brown;
+}
+
+.Gainsboro {
+	border-color: gainsboro;
+}
+
+.DodgerBlue {
+	border-color: dodgerblue;
+}
+
+.DarkGray {
+	border-color: darkgray;
 }

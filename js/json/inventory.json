@@ -15,7 +15,7 @@
       "model": "CR90 Corvette",
       "year": "26BBY",
       "price": "1,250,000",
-      "color": "LightGray",
+      "color": "Brown",
       "purchased": false,
       "description": "This Corvette-class cruiser is fitted with dual turbolaser turrets and has docking rings for up to three RZ-1 A-Wing starfighters. It's perfect for those on the go who need a little extra protection.",
       "img": "img/cr90.png"
@@ -45,7 +45,7 @@
       "model": "T-65 X-Wing",
       "year": "9 BBY",
       "price": "90,000",
-      "color": "Gainsboro",
+      "color": "DarkGray",
       "purchased": false,
       "description": "This X-Wing starfighter is prefect for any long range strike. Capable of going toe-to-toe with any of the latest TIE series, you can be sure you'll get there and back in one piece!",
       "img": "img/t65xwing.png"

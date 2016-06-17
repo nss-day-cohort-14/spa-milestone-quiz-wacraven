@@ -7,7 +7,7 @@ var CarLot = (function (carLot) {
   carLot.cardBuilder = function(parsedObj) {
     for (var i = 0; i < parsedObj.length; i++) {
     	var avail;
-    	if (parsedObj[i].purchased == false) {
+    	if (parsedObj[i].purchased == false) { // change purchased value to more human friendly output
     		avail = "Available now!"
     	}
 			var newDiv = document.createElement(`div`);
@@ -16,13 +16,13 @@ var CarLot = (function (carLot) {
 				<img src="${parsedObj[i].img}">
 				<p>Manufacturer: ${parsedObj[i].make}</p>
 				<p>Year: ${parsedObj[i].year}</p>
-				<p class="color">Color: ${parsedObj[i].color}</p>
+				<p>Color: ${parsedObj[i].color}</p>
 				<p>Price: ${parsedObj[i].price} credits</p>
 				<p class='shipAvail'>${avail}</p>
 				<p class='description'>${parsedObj[i].description}</p>
 				`
 			newDiv.innerHTML = content;
-			newDiv.setAttribute('class', 'col-md-4 shipCard');
+			newDiv.setAttribute('class', `col-md-4 shipCard ${parsedObj[i].color}`);
 			divContainer.appendChild(newDiv);
     }
 		var card = document.getElementsByClassName('shipCard');

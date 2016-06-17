@@ -10,10 +10,20 @@ var CarLot = (function (carLot) {
 					clearSelected[i].classList.remove('selected');
 				}
 				this.classList.add('selected'); // add selected class to clicked item
-				
-			
+				var inputBox = document.getElementById('inputBox')
+				inputBox.focus();
 			});
 		}
+		var inputBox = document.getElementById('inputBox')
+		inputBox.addEventListener("keyup", function(key) {
+			var selectedCard = document.getElementsByClassName('selected').item(0);
+			var getDesc = selectedCard.getElementsByClassName('description').item(0)
+			getDesc.innerText = inputBox.value;
+			if (key.keyCode === 13) {
+				inputBox.value = "";
+			}
+		})
+
 	}
 
 	return carLot
