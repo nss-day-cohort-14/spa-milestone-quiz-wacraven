@@ -11,19 +11,15 @@ var CarLot = (function (carLot) {
   carLot.loadSuccess = function() {
     var parsedJSON = JSON.parse(this.responseText);
     var parsedObj = parsedJSON.cars
-    // console.log("Parsed JSON:", parsedJSON);
-    // console.log("Parsed Object:", parsedObj);
-    CarLot.cardBuilder(parsedObj);
+    carLot.cardBuilder(parsedObj);
     return parsedObj;
   };
-
-  // carLot.parsedJSON = function(parsed) {
-  //   var parsedObj = parsed
-  // };
 
   carLot.loadError = function() {
     console.log("Error loading JSON file");
   };
+
+  carLot.loadInventory();
 
   return carLot;
   

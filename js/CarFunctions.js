@@ -5,8 +5,6 @@ var CarLot = (function (carLot) {
 
 
   carLot.cardBuilder = function(parsedObj) {
-    console.log(parsedObj);
-		console.log(divContainer);
     for (var i = 0; i < parsedObj.length; i++) {
     	var avail;
     	if (parsedObj[i].purchased == false) {
@@ -18,17 +16,17 @@ var CarLot = (function (carLot) {
 				<img src="${parsedObj[i].img}">
 				<p>Manufacturer: ${parsedObj[i].make}</p>
 				<p>Year: ${parsedObj[i].year}</p>
-				<p>Color: ${parsedObj[i].color}</p>
+				<p class="color">Color: ${parsedObj[i].color}</p>
 				<p>Price: ${parsedObj[i].price} credits</p>
 				<p class='shipAvail'>${avail}</p>
-				<p>${parsedObj[i].description}</p>
-				<p></p>
-				<p></p>
+				<p class='description'>${parsedObj[i].description}</p>
 				`
 			newDiv.innerHTML = content;
 			newDiv.setAttribute('class', 'col-md-4 shipCard');
 			divContainer.appendChild(newDiv);
     }
+		var card = document.getElementsByClassName('shipCard');
+		carLot.eventListeners(card, parsedObj); //send card vaule to eventlisteners.js
   }
 
   return carLot;

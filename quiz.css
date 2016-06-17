@@ -3,7 +3,7 @@
 	height: 600px;
 }
 
-.shipCard > * {
+.description {
 	text-align: justify;
 }
 
@@ -15,4 +15,12 @@
 
 .shipHeader {
 	text-align: center;
+}
+
+/*.shipCard:hover {
+	background-color: lightgray;
+}*/
+
+.selected {
+	background-color: darkgray;
 }
