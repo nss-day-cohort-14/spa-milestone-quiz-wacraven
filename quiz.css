@@ -1,0 +1,43 @@
+.shipCard {
+	border: 3px solid black;
+	height: 600px;
+}
+
+.description {
+	text-align: justify;
+}
+
+.shipCard > img {
+	width: 200px;
+	display: block;
+	margin: auto;
+}
+
+.shipHeader {
+	text-align: center;
+}
+
+.selected {
+	background-color: lightgray;
+	border: 5px solid;
+}
+
+.Wheat {
+	border-color: wheat;
+}
+
+.Brown {
+	border-color: brown;
+}
+
+.Gainsboro {
+	border-color: gainsboro;
+}
+
+.DodgerBlue {
+	border-color: dodgerblue;
+}
+
+.DarkGray {
+	border-color: darkgray;
+}
